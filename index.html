@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viemport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>
+        the weather app
+    </title>
+    <body>
+        <div class="weather-app">
+            <header>
+                <form class="weather-app-search" id="weather-app-search">
+                    <input type="text" placeholder="Enter your city.." class="search-city" id="search-city" required>
+                    <input type="submit" value="search" class="search-box">
+                </form>
+            </header>
+            <main>
+                <div class="weather-app-data">
+                    <div>
+                        <h1 class="weather-app-city" id="weather-app-city"></h1>
+                        <p class="weather-app-details"> <span id="show-time">  </span>, <span id="description"> scattered clouds </span>
+                            <br>
+                         Humidity <strong id="humidity"></strong>, wind speed <strong id="wind-speed"></strong>
+                        </p>
+                    </div>
+                    
+                        
+                
+                
+                        <div class="temperature-container">
+                           <div id="icon"><!--<img  src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-app-icon">--></div> 
+                            <div class="weather-app-temperature" id="weather-app-temperature"></div>
+                            <div class="weather-app-unit">℃</div>
+                        </div>
+             
+                </div>
+                <div class="weather-forecast" id="forecast"></div>
+            </main>
+                <div class="footer-style">
+                    <footer>
+                        this coded  written by sanaz vatani <a href="https://github.com/sanazvatani">on Github profile</a>  <a href="#">and Github open source</a> <a href="#">committed</a>
+                    </footer>
+                </div>
+            
+        </div>
+            <script src="src/java.js"></script>
+    </body>
+
+</html>
